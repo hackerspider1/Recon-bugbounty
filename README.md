@@ -155,3 +155,5 @@ local LHOST="http://localhost"; gau $1 | gf redirect | qsreplace "$LHOST" | xarg
 # Thanks
 #### We use tools which are developed by the following people
 [OWASP](https://github.com/OWASP/), [ProjectDiscovery](https://github.com/projectdiscovery/), [Tom Hudson](https://github.com/tomnomnom/)
+
+Let me know one-liner owner would like to give credit!!
