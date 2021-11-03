@@ -109,7 +109,7 @@ enum(){
 You can add Git-hound ass well in it
 
 - Download the [latest release of GitHound](https://github.com/tillson/git-hound/releases)
-- Create a ./config.yml or ~/.githound/config.yml with your GitHub username and password. Optionally, include your 2FA TOTP seed. See config.example.yml.
+- Create a ./config.yml or ~/.githound/config.yml with your GitHub username and password. Optionally, include your 2FA TOTP seed. See [config.example.yml](https://github.com/tillson/git-hound/blob/master/config.example.yml).
 - If it's your first time using the account on the system, you may receieve an account verification email.
 
 `echo "guptashubham.com" | git-hound`
