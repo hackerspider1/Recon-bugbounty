@@ -79,6 +79,8 @@ pip3 install dirsearch
 
 Download the wordlist `▶ wget "https://raw.githubusercontent.com/hackerspider1/Recon-bugbounty/main/dir.txt"`
 
+# Enum
+
 Add the following in your .zshrc
 
 ```
@@ -99,5 +101,19 @@ enum(){
 	jaeles scan -s ~/.jaeles/ -U hosts.txt
 	for i in $(cat hosts.txt); do ffuf -u $i/FUZZ -w ~/Documents/bugbounty/wordlist/dir.txt -ac -c -e php,txt,asp,html,aspx; done
 }
+```
+
+You can add Git-hound ass well in it
+
+- Download the [latest release of GitHound](https://github.com/tillson/git-hound/releases)
+- Create a ./config.yml or ~/.githound/config.yml with your GitHub username and password. Optionally, include your 2FA TOTP seed. See config.example.yml.
+- If it's your first time using the account on the system, you may receieve an account verification email.
+
+`echo "guptashubham.com" | git-hound`
+
+add following line in the last of #enum (.zshrc)
+
+```
+echo "$1" | git-hound
 ```
 
