@@ -151,6 +151,11 @@ local LHOST="http://localhost"; gau $1 | gf redirect | qsreplace "$LHOST" | xarg
 }
 ```
 
+### Githound
+
+githound(){
+echo "$1" | git-hound --dig-files --dig-commits --many-results --regex-file key.txt --results-only > api_tokens.txt"
+}
 
 # Thanks
 #### We use tools which are developed by the following people
