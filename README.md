@@ -77,6 +77,8 @@ You can use dirsearch as well.
 pip3 install dirsearch
 `
 
+Download the wordlist `▶ wget "https://raw.githubusercontent.com/hackerspider1/Recon-bugbounty/main/dir.txt"`
+
 Add the following in your .zshrc
 
 ```
