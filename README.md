@@ -1,4 +1,7 @@
 # Recon-bugbounty
+
+<a href="https://www.buymeacoffee.com/hackerspider1" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
 Simple recon using multiple tools!
 
 If you have Go installed and configured (i.e. with $GOPATH/bin in your $PATH):
@@ -117,3 +120,7 @@ add following line in the last of #enum (.zshrc)
 echo "$1" | git-hound
 ```
 
+
+# Thanks
+#### We use tools which are developed by the following people
+[OWASP](https://github.com/OWASP/), [ProjectDiscovery](https://github.com/projectdiscovery/), [Tom Hudson](https://github.com/tomnomnom/)
