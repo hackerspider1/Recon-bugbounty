@@ -77,7 +77,7 @@ If you have a Go environment, make sure you have Go >= 1.13 with Go Modules enab
 You can use dirsearch as well.
 
 `
-pip3 install dirsearch
+▶ pip3 install dirsearch
 `
 
 Download the wordlist `▶ wget "https://raw.githubusercontent.com/hackerspider1/Recon-bugbounty/main/dir.txt"`
@@ -119,6 +119,19 @@ add following line in the last of #enum (.zshrc)
 ```
 echo "$1" | git-hound
 ```
+
+# Aemhack
+
+```
+git clone https://github.com/0ang3el/aem-hacker.git
+cd aem-hacker
+python3 aem_hacker.py -u https://aem.webapp --host your_vps_hostname_ip
+```
+Add it to .zshrc
+
+`aemhack (){
+python3 ~/aem-directory/aem-hacker/aem_hacker.py -u $1 --host $2
+}`
 
 
 # Thanks
