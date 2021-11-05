@@ -1,9 +1,5 @@
 # Recon-bugbounty
 
-<a href="https://www.buymeacoffee.com/hackerspider1" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/hackerspider1)
-
-
 Simple recon using multiple tools!
 
 If you have Go installed and configured (i.e. with $GOPATH/bin in your $PATH):
@@ -166,3 +162,6 @@ echo "$1" | git-hound --dig-files --dig-commits --many-results --regex-file key.
 [OWASP](https://github.com/OWASP/), [ProjectDiscovery](https://github.com/projectdiscovery/), [Tom Hudson](https://github.com/tomnomnom/), [Tillson Galloway](https://github.com/tillson), [0ang3el](https://github.com/0ang3el), [Michael Henriksen](https://github.com/michenriksen), [Jaeles Project](https://github.com/jaeles-project)
 
 Let me know one-liner owner would like to give credit!!
+
+<a href="https://www.buymeacoffee.com/hackerspider1" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/hackerspider1)
