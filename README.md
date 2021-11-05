@@ -2,6 +2,9 @@
 
 Simple recon using multiple tools!
 
+
+![enum](https://raw.githubusercontent.com/hackerspider1/Recon-bugbounty/main/enum.png)
+
 If you have Go installed and configured (i.e. with $GOPATH/bin in your $PATH):
 
 ### Install Assetfinder
