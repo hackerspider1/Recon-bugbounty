@@ -160,7 +160,7 @@ echo "$1" | git-hound --dig-files --dig-commits --many-results --regex-file key.
 
 # Thanks
 #### We use tools which are developed by the following people
-[OWASP](https://github.com/OWASP/), [ProjectDiscovery](https://github.com/projectdiscovery/), [Tom Hudson](https://github.com/tomnomnom/), [Tillson Galloway](https://github.com/tillson), [0ang3el](https://github.com/0ang3el), [Michael Henriksen](https://github.com/michenriksen), [Jaeles Project](https://github.com/jaeles-project)
+[OWASP](https://github.com/OWASP/), [ProjectDiscovery](https://github.com/projectdiscovery/), [Tom Hudson](https://github.com/tomnomnom/), [Tillson Galloway](https://github.com/tillson), [0ang3el](https://github.com/0ang3el), [Michael Henriksen](https://github.com/michenriksen), [Jaeles Project](https://github.com/jaeles-project), [Lalit](https:/twitter.com/0xklaue)
 
 Let me know one-liner owner would like to give credit!!
 
