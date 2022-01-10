@@ -90,16 +90,7 @@ Add the following in your .zshrc
 ```shell
 enum(){
         mkdir $1
-	cd $1
-        assetfinder -subs-only "$1" | tee -a domains
-        cat domains | anew domains.txt
-	amass enum -brute -active --passive -d "$1" -o domains -config ~/.config/amass/config.ini
-        cat domains | anew domains.txt
-        rm domains
-        subfinder -silent -d "$1" -o domains
-        cat domains | anew domains.txt
-        rm domains
-        cat domains.txt | httpx -silent | tee -a hosts.txt
+        subfinder -silent -d "$1" -o domains | httpx -silent -o hosts.txt
 	osascript \
         -e 'tell application "iTerm2" to tell current window to set newWindow to (create tab with default profile)'\
         -e 'tell application "iTerm2" to tell current session of newWindow to write text "cd '`pwd`' && dirsearch -l hosts.txt -t 20 -x 500 -e asp,aspx,htm,html,gz,tgz,zip,txt,php,pl,tar,action,do --excl\ude-status=301,400,403,500-999"'\
